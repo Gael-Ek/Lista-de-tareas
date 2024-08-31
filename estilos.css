@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(90deg, #6f489d,#41629e,#2f5e63);
+    font-family: 'Prompt', sans-serif;
+}
+
+/* Contenedor */
+.contenedor{
+    max-width: 80%;
+    width: 400px;
+    height: 600px;
+    margin: auto;
+}
+
+/* perfil */
+.perfil{
+    h1{
+        color: white;
+    }
+
+    span{
+        color: white;
+        letter-spacing: 1px;
+    }
+
+    #fecha{
+        color: white;
+        padding: 50px 0 5px 0;
+    }
+}
+
+/*  Agregar Tarea */
+.agregar-tarea{
+    background-color: white;
+    border-radius:15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 70px;
+    margin: 40px 0;
+
+    input{
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        border: none;
+        background-color: white;
+        padding-left: 3px;
+
+        &::placeholder{
+            font-size: 1.1rem;
+        }
+    }
+
+    i{
+        font-size: 50px;
+        background-color: linear-gradient(90deg, #6f489d,#41629e,#2f5e63);
+        &:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+}
+
+
+/*  Lista tarea */
+.lista-tareas{
+    margin-bottom: 20px;
+
+    h3{
+        color: white;
+    }
+
+    ul{
+        li{
+            display: flex;
+            background: white;
+            border-radius: 15px;
+            align-items: center;
+            padding: 10px;
+            justify-content: space-between;
+            margin: 5px 0;
+
+            i{
+                font-size: 25px;
+
+                &:hover{
+                    color: grey;
+                    cursor: pointer;
+                }
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+.subrayado{
+    text-decoration: line-through;
+    color: red;
+}
